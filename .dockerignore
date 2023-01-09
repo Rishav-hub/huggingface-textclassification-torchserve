@@ -1,0 +1,11 @@
+artifact
+logs
+env
+docs
+flowcharts
+notebooks
+saved_models
+.git
+# model_store
+artifacts
+ 
