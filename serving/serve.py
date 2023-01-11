@@ -26,7 +26,7 @@ class Serving:
         print(os.path.isfile(self.model_serving_config.mar_file_path))
 
     def serve_model(self):
-        os.system(f"torchserve --start --model-store {self.model_serving_config.model_store_path} --models my_model={MAR_FILE_NAME} --ts-config config.properties")
+        os.system(f"torchserve --start --model-store {self.model_serving_config.model_store_path} --models model={MAR_FILE_NAME} --ts-config config.properties")
 
     def initiate_serving(self):
         print(self.model_serving_config.model_store_path)
